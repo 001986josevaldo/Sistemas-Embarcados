@@ -1,0 +1,15 @@
+EXPERIMENTO I - Pisca LED 
+EXPERIMENTO II - Pisca 10 LEDs 
+EXPERIMENTO III - PISCA 10 LEDS VÁRIOS EFEITOS
+3.1. Vai volta 
+3.2. Vai fica aceso 
+3.3. Vai fica aceso, volta apagando 
+3.4. Vai dos extremos para o meio
+3.5. Vai dos extremos para o meio e volta para os extremos 
+3.6. Vai par volta impar 
+3.7. Efeito Super Máquina 
+
+EXPERIMENTO IV - PISCA 10 LEDS - VELOCIDADE VARIÁVEL - POTENCIÔMETRO
+EXPERIMENTO V - LED RGB, 
+EXPERIMENTO VI - DISPLAY DE 7 SEGMENTOS, LETRAS E NÚMEROS
+EXPERIMENTO VII - LDR
