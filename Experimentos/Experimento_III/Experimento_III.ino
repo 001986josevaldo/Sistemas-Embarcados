@@ -1,3 +1,11 @@
+/*Este código define uma classe chamada 
+LedController para controlar um conjunto de LEDs 
+conectados ao Arduino. A classe implementa diferentes 
+efeitos de iluminação, como deslocamento sequencial, 
+movimentação de extremos para o centro e o 
+famoso efeito "Super Máquina" (Knight Rider). 
+No loop principal, os efeitos são executados em sequência, 
+criando padrões de iluminação dinâmicos e interativos.*/
 class LedController {
   private:
     int numLeds;          // Número de LEDs

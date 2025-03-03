@@ -1,15 +1,73 @@
-EXPERIMENTO I - Pisca LED 
+EXPERIMENTO I - Pisca LED
+    Este código controla dois LEDs de forma independente utilizando 
+    a função millis() para evitar o uso de delay(). 
+    O LED principal pisca com um intervalo ajustável, 
+    reduzindo gradualmente sua frequência até um limite mínimo antes de 
+    ser reinicializado. O LED de status pisca a cada 500 ms, 
+    funcionando como um indicador contínuo de operação. 
+
 EXPERIMENTO II - Pisca 10 LEDs 
+    Este código controla uma sequência de 10 LEDs conectados ao Arduino, 
+    a endendo-os um por um em ordem crescente. 
+    Cada LED permanece aceso por 200 milissegundos antes de apagar, 
+    criando um efeito de movimento. Após completar a sequência, há uma pausa de 500 milissegundos antes de reiniciar o ciclo.
+
 EXPERIMENTO III - PISCA 10 LEDS VÁRIOS EFEITOS
-3.1. Vai volta 
-3.2. Vai fica aceso 
-3.3. Vai fica aceso, volta apagando 
-3.4. Vai dos extremos para o meio
-3.5. Vai dos extremos para o meio e volta para os extremos 
-3.6. Vai par volta impar 
-3.7. Efeito Super Máquina 
+    3.1. Vai volta 
+    3.2. Vai fica aceso 
+    3.3. Vai fica aceso, volta apagando 
+    3.4. Vai dos extremos para o meio
+    3.5. Vai dos extremos para o meio e volta para os extremos 
+    3.6. Vai par volta impar 
+    3.7. Efeito Super Máquina 
 
 EXPERIMENTO IV - PISCA 10 LEDS - VELOCIDADE VARIÁVEL - POTENCIÔMETRO
-EXPERIMENTO V - LED RGB, 
+    Este código controla uma sequência de LEDs usando um potenciômetro para ajustar a velocidade do efeito.
+    O potenciômetro define o tempo de delay entre os LEDs, variando de um mínimo a um máximo configurável.
+    Cada LED acende em sequência e apaga antes de passar para o próximo.
+
+EXPERIMENTO V - LED RGB 
+    Este código controla um LED RGB para exibir mais de 256 cores diferentes,
+    usando PWM para controlar a intensidade de cada componente de cor.
+    Versão sem comunicação Serial para maior eficiência.
+
 EXPERIMENTO VI - DISPLAY DE 7 SEGMENTOS, LETRAS E NÚMEROS
+    Este código controla um display de 7 segmentos, exibindo uma sequência de caracteres.
+    Os pinos do Arduino são configurados para acionar cada segmento do display.
+    A matriz de caracteres define quais segmentos devem ser ativados para cada símbolo.
+
 EXPERIMENTO VII - LDR
+    O LDR mede a intensidade da luz ambiente e retorna um valor entre 0 e 1023.
+    Se o valor lido for maior que 500, o LED permanece aceso enquanto essa condição for verdadeira.
+    Assim que o valor do LDR cair abaixo de 500, o LED apaga.
+    O loop while mantém o LED ligado até que a condição mude, garantindo uma resposta contínua à variação de luz.
+    O Monitor Serial exibe os valores lidos do LDR e o estado do LED para depuração.
+
+EXPERIMENTO VIII - Semáforo 2 tempos
+    Este código simula o funcionamento de um semáforo de dois tempos, com dois conjuntos de LEDs (vermelho, amarelo e verde) representando dois semáforos opostos. 
+    O semáforo 1 tem as fases: verde (5 segundos), amarelo (2 segundos), e vermelho. O semáforo 2 possui fases: verde (5 segundos), amarelo (2 segundos) e vermelho.
+    Durante cada fase, os LEDs são acesos e apagados de acordo com o tempo de duração especificado, controlando a alternância entre as luzes dos semáforos.
+
+EXPERIMENTO X - Fazendo sons
+    Código para tocar uma música usando um buzzer passivo no Arduino.
+    O buzzer é conectado a um pino PWM e emite sons de diferentes frequências.
+    A melodia é armazenada em arrays de notas e durações.
+    A função tone() gera os sons e noTone() interrompe antes da próxima nota.
+    O loop toca a música e a repete após um intervalo.
+
+EXPERIMENTO XI - Ultrassom
+    Este código utiliza um sensor ultrassônico HC-SR04 
+    para medir distâncias em centímetros e exibir os valores 
+    no monitor serial.
+
+EXPERIMENTO XII - Sensor de temperatura
+    Código para medir temperatura com um NTC e exibi-la em um display de 7 segmentos (cátodo comum).
+    O NTC forma um divisor de tensão com um resistor de 10kΩ para leitura analógica.
+    A temperatura é convertida e mapeada de 0 a 9 para exibição no display.
+    O display de 7 segmentos é acionado via pinos digitais.
+
+EXPERIMENTO XIII - Servo motor
+    Este código controla um servo motor, 
+    movimentando-o por uma sequência de 
+    ângulos predefinidos de forma repetitiva.
+

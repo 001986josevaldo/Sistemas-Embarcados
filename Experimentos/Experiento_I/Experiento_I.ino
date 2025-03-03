@@ -1,3 +1,11 @@
+/*
+Este código controla dois LEDs de forma independente utilizando 
+a função millis() para evitar o uso de delay(). 
+O LED principal pisca com um intervalo ajustável, 
+reduzindo gradualmente sua frequência até um limite mínimo antes de 
+ser reinicializado. O LED de status pisca a cada 500 ms, 
+funcionando como um indicador contínuo de operação.
+*/
 const int pinoLed = 12; // Pino do LED
 const int ledStatus = 13; // LED de status
 int tempoDelay = 500; // Tempo inicial de atraso (em ms)

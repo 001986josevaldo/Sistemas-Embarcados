@@ -1,3 +1,9 @@
+/*
+Este código controla uma sequência de 10 LEDs conectados ao Arduino, 
+acendendo-os um por um em ordem crescente. 
+Cada LED permanece aceso por 200 milissegundos antes de apagar, 
+criando um efeito de movimento. Após completar a sequência, há uma pausa de 500 milissegundos antes de reiniciar o ciclo.
+*/
 const int numLeds = 10;
 const int primeiroPino = 2;
 
