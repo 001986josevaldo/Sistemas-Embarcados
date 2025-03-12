@@ -1,11 +1,3 @@
-/*************************** Marlon Nardi ******************************
-  Projeto: Cubo de LEDs 4x4x4 com Arduino NANO
-  Vídeo ensinando a motar: 
-  Loja: https://www.lojamarlonnardi.com/
-  Site: https://www.marlonnardi.com/
-  Youtube: https://www.youtube.com/marlonnardiw
-  Facebook: https://www.facebook.com/professormarlonnardi
-************************************************************************/
 
 /****** Programação Cubo de LEDs 4x4x4 com Arduino NANO *******/
 
@@ -15,10 +7,10 @@ A1 = 15; A2 = 16; A3 = 17; A4 = 18; A5 = 19; A6 = 20; A7 = 21; */
 
 //Posição no vetor:
 //               0  1  2  3  4  5  6  7  8  9  10  11  12  13  14  15
-int Colunas[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15}; 
+int Colunas[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,14,15,16,17}; 
 //Posição no vetor:
 //                0   1   2   3  
-int Andares[] = {16, 17, 18, 19};
+int Andares[] = {18,19,20,21};
    
 int RandColuna;  
 int RandAndares;
