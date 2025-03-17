@@ -122,7 +122,7 @@ void CuboLED::efeitoExplosao() {
   }
   
   void CuboLED::efeitoEspiral3D() {
-    int delayEspiral = 10; // Ajuste a velocidade da espiral
+    int delayEspiral = 50; // Ajuste a velocidade da espiral
     for (int camada = 0; camada < 4; camada++) {
       for (int i = 0; i < 4; i++) {
         // Acende LEDs em espiral
@@ -144,7 +144,7 @@ void CuboLED::efeitoExplosao() {
   
   void CuboLED::efeitoChuva() {
     int delayChuva = 100; // Ajuste a velocidade da chuva
-    for (int i = 0; i < 50; i++) { // Repete o efeito 50 vezes
+    for (int i = 0; i < 10; i++) { // Repete o efeito 50 vezes
       int camada = rand() % 4; // Escolhe uma camada aleatória
       int coluna = rand() % 16; // Escolhe uma coluna aleatória
       digitalWrite(andares[camada], HIGH); // Ativa a camada
@@ -156,8 +156,8 @@ void CuboLED::efeitoExplosao() {
   }
   
   void CuboLED::efeitoCuboGiratorio() {
-    int delayGiro = 100; // Ajuste a velocidade do giro
-    for (int i = 0; i < 20; i++) { // Repete o efeito 20 vezes
+    int delayGiro = 200; // Ajuste a velocidade do giro
+    for (int i = 0; i < 5; i++) { // Repete o efeito 20 vezes
       for (int camada = 0; camada < 4; camada++) {
         digitalWrite(andares[camada], HIGH); // Ativa a camada
         for (int coluna = 0; coluna < 16; coluna++) {

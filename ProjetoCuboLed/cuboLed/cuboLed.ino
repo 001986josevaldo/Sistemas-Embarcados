@@ -38,8 +38,8 @@ void loop() {
     cubo.chuvaDeLeds(10);
     delay(100);
     // 4 parte
-    //cubo.efeitoChuva();
-    cubo.efeitoCuboGiratorio(); 
+    cubo.efeitoChuva();
+
     cubo.efeitoEspiral3D();
     cubo.efeitoExplosao();
     cubo.efeitoOnda3D();
